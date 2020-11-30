@@ -1,0 +1,48 @@
+$border: 1px solid #ccc;
+$border-radius: .4rem;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // background-color: #282c34;
+  // color: whitesmoke;
+  background-color: #f6f8fa;
+  color: #24292e;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input[type=text] {
+  padding: .4rem .6rem;
+  border: $border;
+  border-radius: $border-radius;
+  width: 10rem;
+  height: 2rem;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  float: right;
+  height: 2rem;
+  padding: 0 .8rem;
+  border: $border;
+  border-radius: $border-radius;
+  background-color: white;
+  box-sizing: border-box;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}

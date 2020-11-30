@@ -1,0 +1,21 @@
+.feed {
+  max-width: 70rem;
+  margin: auto;
+
+  & > header {
+    margin-bottom: 2rem;
+
+    input {
+      transition: width .2s;
+
+      &:focus {
+        width: 20rem;
+      }
+    }
+  }
+}
+
+.feed__loading {
+  text-align: center;
+  font-size: 1.2rem;
+}

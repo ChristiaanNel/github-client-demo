@@ -1,0 +1,77 @@
+.feed-item {
+  display: flex;
+  position: relative;
+
+  & + .feed-item {
+    margin-top: 1.4rem;
+  }
+
+  &:hover .feed-item__description svg {
+    display: initial;
+  }
+}
+
+.feed-item__avatar {
+  flex: 0 0 4rem;
+  height: 4rem;
+
+  border-radius: 50%;
+  background-position: center;
+  background-size: contain;
+  background-color: blue;
+}
+
+.feed-item__description {
+  small {
+    float: right;
+    opacity: .8;
+  }
+
+  svg {
+    display: none;
+    margin-left: .6rem;
+    cursor: pointer;
+  }
+}
+
+.feed-item__content {
+  flex-grow: 1;
+  margin-left: 1rem;
+  min-width: 0;
+}
+
+.feed-item__body {
+  margin-top: 1rem;
+  background-color: #fff;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: .4rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  .push-event {
+    overflow: hidden;
+
+    & > div:first-child {
+      span {
+        color: rgb(3, 101, 214);
+        background-color: rgb(234, 245, 255);
+        border-radius: .4rem;
+        padding: .1rem .6rem;
+        font-weight: 500;
+      }
+    }
+
+    & > .commit {
+      margin-top: 0.2rem;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+
+      & > span:first-child {
+        color: rgb(3, 101, 214);
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}
